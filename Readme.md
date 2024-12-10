@@ -45,7 +45,7 @@ Welcome to my Personal Portfolio project! This is a multi-page, responsive portf
 
 ## Live Demo
 
-Check out the live version of my portfolio [here](https://your-netlify-url.netlify.app).
+Check out the live version of my portfolio [here](https://udaykirankothagattu-portfolio.netlify.app/).
 
 ## About Me
 
