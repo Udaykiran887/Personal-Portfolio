@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(87, 108, 117) 0%, rgb(37, 50, 55) 100.2%);
+    color: #C9D1D9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.contact-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #22313f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #f96d00;
+    font-size: 2.5rem;
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #2e3b4e;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-list li:hover {
+    transform: scale(1.05);
+    background-color: #1b2836;
+}
+
+.contact-list li i {
+    font-size: 24px;
+    color: #f96d00;
+    margin-right: 15px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #C9D1D9;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    margin-left: 10px;
+}
+
+.contact-link:hover {
+    color: #f96d00;
+}
+
+.contact-address {
+    margin-left:10px;
+    color: #C9D1D9;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22313f;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #f96d00;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav > div:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #f96d00;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav > div:last-child {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #22313f;
+        width: 100%;
+    }
+
+    nav > div:last-child.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+
+    nav a {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
